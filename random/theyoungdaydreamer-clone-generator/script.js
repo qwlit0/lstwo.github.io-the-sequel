@@ -26,7 +26,8 @@ function generate() {
         { word: "this", plural: false },
         { word: "that", plural: false },
         { word: "these", plural: true },
-        { word: "those", plural: true }
+        { word: "those", plural: true },
+        { word: "potential", plural: false }
     ];
 
     const young_replacements = [
@@ -45,7 +46,8 @@ function generate() {
         { word: "ancient", starts_with_vowel: true },
         { word: "venerable", starts_with_vowel: false },
         { word: "old", starts_with_vowel: true },
-        { word: "wizened", starts_with_vowel: false }
+        { word: "wizened", starts_with_vowel: false },
+        { word: "retired", starts_with_vowel: false }
     ];
 
     const day_replacements = [
@@ -58,7 +60,9 @@ function generate() {
         "noon",
         "midday",
         "twilight",
-        "dusk"
+        "dusk",
+        "midnight",
+        "abyss"
     ];
 
     const dreamer_replacements = [
@@ -78,6 +82,8 @@ function generate() {
         { singular: "marer", plural: "marers" },
         { singular: "stalker", plural: "stalkers" },
         { singular: "observer", plural: "observers" },
+        { singular: "mastermind", plural: "masterminds" },
+        { singular: "consumer", plural: "consumers" }
     ];
 
     let the_replacement = the_replacements[Math.floor(Math.random() * the_replacements.length)];
